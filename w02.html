@@ -1,0 +1,69 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>W02 Sign up (students) · WashQ wireframes</title>
+<link rel="stylesheet" href="wireframe.css"></head><body class="canvas">
+<div class="meta"><b>WashQ wireframes</b><span>W02 · Sign up (students)</span>
+<span>Covers FR-0.1</span><span class="sp"></span>
+<a href="index.html">All screens</a>
+<a href="w01.html">&larr; Prev</a>
+<a href="w03.html">Next &rarr;</a></div>
+<div class="label">Default state (clickable)</div>
+<div class="row"><div class="frame"><div style="display:flex;min-height:760px">
+<div style="flex:1;background:var(--fill);border-right:1.5px solid var(--line);display:flex;flex-direction:column;justify-content:center;padding:64px">
+<div class="logo" style="font-size:28px"><i></i>WashQ</div>
+<p style="font-size:20px;max-width:420px;margin:18px 0 6px">See every washer and dryer in your building before you carry the basket down.</p>
+<p class="sub">KFUPM Dormitory Laundry</p>
+<div class="img mt2" style="height:240px;max-width:460px;border-radius:6px"></div></div>
+<div style="width:560px;display:flex;align-items:center;justify-content:center;padding:40px">
+<div style="width:480px"><h1>Create your account</h1><p class="sub mb">For KFUPM dormitory residents.</p>
+<div class="grid g2" style="gap:0 16px">
+<div class="field"><label>Full name</label><div class="inp">Full name</div></div>
+<div class="field"><label>Student ID <span class="ann">2</span></label><div class="inp">9-digit ID</div></div>
+</div>
+<div class="field"><label>KFUPM email <span class="ann">1</span></label><div class="inp">name@kfupm.edu.sa</div></div>
+<div class="grid g2" style="gap:0 16px">
+<div class="field"><label>Dormitory building <span class="ann">4</span></label><div class="inp sel">Select building</div></div>
+<div class="field"><label>Room</label><div class="inp">Room number</div></div>
+</div>
+<div class="field"><label>Password <span class="ann">3</span></label><div class="inp">Create a password</div></div>
+<div class="small" style="margin:-6px 0 12px"><span class="chk"><i class=""></i>8+ characters</span><span class="chk"><i class=""></i>Contains a letter</span><span class="chk"><i class=""></i>Contains a digit</span></div>
+<div class="field"><label>Confirm password</label><div class="inp">Repeat password</div></div>
+<a class="btn pri" style="width:100%" href="#state2">Create account</a> <span class="ann">5</span>
+<p class="sub mt" style="text-align:center">Already have an account? <a class="link" href="w01.html">Sign in</a></p></div></div></div></div><aside class="notes"><h3>W02 · Sign up (students)</h3>
+<p><b>Covers:</b> FR-0.1</p>
+<h4>Annotations</h4><ol><li><span class="ann">1</span><span>Email must end in @kfupm.edu.sa and must not already be registered.</span></li><li><span class="ann">2</span><span>Student ID: exactly 9 digits, unique.</span></li><li><span class="ann">3</span><span>Live password checklist ticks off each rule while typing.</span></li><li><span class="ann">4</span><span>Building dropdown lists buildings created by the admin (A1); room is free text.</span></li><li><span class="ann">5</span><span>Create account validates every field; on success shows the 'Check your email' state and sends the activation link.</span></li></ol></aside></div>
+<div class="label" id="state1">State: Validation errors</div><div class="row"><div class="frame short"><div style="display:flex;min-height:760px">
+<div style="flex:1;background:var(--fill);border-right:1.5px solid var(--line);display:flex;flex-direction:column;justify-content:center;padding:64px">
+<div class="logo" style="font-size:28px"><i></i>WashQ</div>
+<p style="font-size:20px;max-width:420px;margin:18px 0 6px">See every washer and dryer in your building before you carry the basket down.</p>
+<p class="sub">KFUPM Dormitory Laundry</p>
+<div class="img mt2" style="height:240px;max-width:460px;border-radius:6px"></div></div>
+<div style="width:560px;display:flex;align-items:center;justify-content:center;padding:40px">
+<div style="width:480px"><h1>Create your account</h1><p class="sub mb">For KFUPM dormitory residents.</p>
+<div class="grid g2" style="gap:0 16px">
+<div class="field"><label>Full name</label><div class="inp filled">Faisal Alharbi</div></div>
+<div class="field"><label>Student ID <span class="ann">2</span></label><div class="inp filled err">20231</div><span class="errmsg">Student ID must be 9 digits.</span></div>
+</div>
+<div class="field"><label>KFUPM email <span class="ann">1</span></label><div class="inp filled err">faisal@gmail.com</div><span class="errmsg">Use your @kfupm.edu.sa email.</span></div>
+<div class="grid g2" style="gap:0 16px">
+<div class="field"><label>Dormitory building <span class="ann">4</span></label><div class="inp filled sel">Building 812</div></div>
+<div class="field"><label>Room</label><div class="inp filled">214</div></div>
+</div>
+<div class="field"><label>Password <span class="ann">3</span></label><div class="inp filled err">••••</div><span class="errmsg">At least 8 characters with a letter and a digit.</span></div>
+<div class="small" style="margin:-6px 0 12px"><span class="chk"><i class=""></i>8+ characters</span><span class="chk"><i class="on"></i>Contains a letter</span><span class="chk"><i class="on"></i>Contains a digit</span></div>
+<div class="field"><label>Confirm password</label><div class="inp filled">••••</div></div>
+<a class="btn pri" style="width:100%" href="#state2">Create account</a> <span class="ann">5</span>
+<p class="sub mt" style="text-align:center">Already have an account? <a class="link" href="w01.html">Sign in</a></p></div></div></div></div><aside class="notes"><h3>Validation errors</h3><p>Each invalid field is outlined with its own message under it; nothing is saved.</p></aside></div>
+<div class="label" id="state2">State: Account created</div><div class="row"><div class="frame short"><div style="display:flex;min-height:760px">
+<div style="flex:1;background:var(--fill);border-right:1.5px solid var(--line);display:flex;flex-direction:column;justify-content:center;padding:64px">
+<div class="logo" style="font-size:28px"><i></i>WashQ</div>
+<p style="font-size:20px;max-width:420px;margin:18px 0 6px">See every washer and dryer in your building before you carry the basket down.</p>
+<p class="sub">KFUPM Dormitory Laundry</p>
+<div class="img mt2" style="height:240px;max-width:460px;border-radius:6px"></div></div>
+<div style="width:560px;display:flex;align-items:center;justify-content:center;padding:40px">
+<div style="width:480px"><div class="box pad" style="text-align:center;padding:40px 28px">
+<div class="img" style="width:72px;height:72px;border-radius:50%;margin:0 auto 16px"></div>
+<h1>Check your email</h1><p class="sub">We sent an activation link to <b>s2023xxxxx@kfupm.edu.sa</b>. The link expires in 24 hours.</p>
+<a class="btn mt" href="w01.html">Back to sign in</a>
+<p class="small muted mt">Didn't get it? <span class="link">Resend email</span></p></div></div></div></div></div><aside class="notes"><h3>Account created</h3><p>Activation email sent. The account cannot sign in until the link is clicked.</p></aside></div>
+</body></html>

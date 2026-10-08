@@ -1,0 +1,65 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>W15 Staff: fault reports and triage · WashQ wireframes</title>
+<link rel="stylesheet" href="wireframe.css"></head><body class="canvas">
+<div class="meta"><b>WashQ wireframes</b><span>W15 · Staff: fault reports and triage</span>
+<span>Covers L1</span><span class="sp"></span>
+<a href="index.html">All screens</a>
+<a href="w14.html">&larr; Prev</a>
+<a href="w16.html">Next &rarr;</a></div>
+<div class="label">Default state (clickable)</div>
+<div class="row"><div class="frame"><div class="hdr">
+<a class="logo" href="w14.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w14.html" class="">Overview</a><a href="w15.html" class="on">Fault Reports</a><a href="w16.html" class="">Machines</a><a href="w18.html" class="">Live Room</a><a href="w19.html" class="">Announcements</a><a href="w20.html" class="">Inventory</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Ahmed K. (Staff) &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Fault reports</h1>
+<div class="flex"><div class="inp sel" style="width:150px">All buildings</div><div class="inp sel" style="width:150px">Status: Open</div><div class="inp sel" style="width:150px">Any category</div><span class="ann">1</span></div></div>
+<div style="display:grid;grid-template-columns:1fr 460px;gap:24px"><table class="t"><tr><th>Machine</th><th>Issue</th><th>Waiting</th><th>Priority</th></tr>
+<tr style="background:var(--fill2)"><td><b>W4</b> · 812</td><td>Not draining</td><td><b>26 h</b></td><td>—</td></tr>
+<tr><td><b>D5</b> · 812</td><td>Not heating</td><td>5 h</td><td>—</td></tr>
+<tr><td><b>W2</b> · 812</td><td>Leaking</td><td>40 min</td><td>—</td></tr>
+<tr><td><b>W1</b> · 815</td><td>Door stuck</td><td>2 h</td><td>—</td></tr></table><div class="box pad"><div class="flex between"><h2 style="margin:0">W4 · Not draining</h2><span class="chip">Open</span></div>
+<p class="small muted">Building 812 · reported by a student 26 h ago · report #R-1042</p>
+<p>"Water stays in the drum after the cycle ends. Tried twice."</p><div class="img" style="height:120px;border-radius:6px"></div><span class="ann">2</span>
+<h4 class="mt" style="margin-bottom:4px">This machine recently</h4><p class="small" style="margin:0">2 repairs in the last 30 days · last: pump replaced, 20 Sep</p>
+<div class="flex mt"><a class="btn pri" href="#state1">Confirm</a><a class="btn" href="#state2">Dismiss</a><span class="ann">3</span><a class="btn ghost" href="w16.html">Open machine</a></div></div></div></div></div><aside class="notes"><h3>W15 · Staff: fault reports and triage</h3>
+<p><b>Covers:</b> L1</p>
+<h4>Annotations</h4><ol><li><span class="ann">1</span><span>Filter by building (only assigned ones), status and category. Oldest open reports first.</span></li><li><span class="ann">2</span><span>Selected report shows the student's description, photo and the machine's recent repair history.</span></li><li><span class="ann">3</span><span>Confirm (sets priority, marks the machine Out of order) or Dismiss (reason required). Both notify the reporting student.</span></li></ol></aside></div>
+<div class="label" id="state1">State: Confirm dialog</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w14.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w14.html" class="">Overview</a><a href="w15.html" class="on">Fault Reports</a><a href="w16.html" class="">Machines</a><a href="w18.html" class="">Live Room</a><a href="w19.html" class="">Announcements</a><a href="w20.html" class="">Inventory</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Ahmed K. (Staff) &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Fault reports</h1>
+<div class="flex"><div class="inp sel" style="width:150px">All buildings</div><div class="inp sel" style="width:150px">Status: Open</div><div class="inp sel" style="width:150px">Any category</div></div></div>
+<div style="display:grid;grid-template-columns:1fr 460px;gap:24px"><table class="t"><tr><th>Machine</th><th>Issue</th><th>Waiting</th><th>Priority</th></tr>
+<tr style="background:var(--fill2)"><td><b>W4</b> · 812</td><td>Not draining</td><td><b>26 h</b></td><td>—</td></tr>
+<tr><td><b>D5</b> · 812</td><td>Not heating</td><td>5 h</td><td>—</td></tr>
+<tr><td><b>W2</b> · 812</td><td>Leaking</td><td>40 min</td><td>—</td></tr>
+<tr><td><b>W1</b> · 815</td><td>Door stuck</td><td>2 h</td><td>—</td></tr></table><div class="box pad"><div class="flex between"><h2 style="margin:0">W4 · Not draining</h2><span class="chip">Open</span></div>
+<p class="small muted">Building 812 · reported by a student 26 h ago · report #R-1042</p>
+<p>"Water stays in the drum after the cycle ends. Tried twice."</p><div class="img" style="height:120px;border-radius:6px"></div>
+<h4 class="mt" style="margin-bottom:4px">This machine recently</h4><p class="small" style="margin:0">2 repairs in the last 30 days · last: pump replaced, 20 Sep</p>
+<div class="flex mt"><a class="btn pri" href="#state1">Confirm</a><a class="btn" href="#state2">Dismiss</a><a class="btn ghost" href="w16.html">Open machine</a></div></div></div></div><div class="scrim"></div><div class="modal" style="width:460px"><div class="mh"><h2 style="margin:0">Confirm report on W4</h2></div>
+<div class="mb"><div class="field"><label>Priority</label><span class="seg"><span>Low</span><span>Medium</span><span class="on">High</span></span></div>
+<div class="field"><label>Note for the student (optional)</label><div class="inp">e.g. Technician assigned, back tomorrow</div></div>
+<div class="banner alt"><span class="ico">i</span><span class="small">W4 will be marked <b>Out of order</b>. 2 future bookings will be cancelled and those students offered other slots.</span></div></div>
+<div class="mf"><a class="btn ghost" href="w15.html">Back</a><a class="btn pri" href="w16.html">Confirm and mark out of order</a></div></div></div><aside class="notes"><h3>Confirm dialog</h3><p>Shows the effect: machine out of order and future bookings cancelled with students re-offered slots.</p></aside></div>
+<div class="label" id="state2">State: Dismiss dialog: reason missing</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w14.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w14.html" class="">Overview</a><a href="w15.html" class="on">Fault Reports</a><a href="w16.html" class="">Machines</a><a href="w18.html" class="">Live Room</a><a href="w19.html" class="">Announcements</a><a href="w20.html" class="">Inventory</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Ahmed K. (Staff) &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Fault reports</h1>
+<div class="flex"><div class="inp sel" style="width:150px">All buildings</div><div class="inp sel" style="width:150px">Status: Open</div><div class="inp sel" style="width:150px">Any category</div></div></div>
+<div style="display:grid;grid-template-columns:1fr 460px;gap:24px"><table class="t"><tr><th>Machine</th><th>Issue</th><th>Waiting</th><th>Priority</th></tr>
+<tr style="background:var(--fill2)"><td><b>W4</b> · 812</td><td>Not draining</td><td><b>26 h</b></td><td>—</td></tr>
+<tr><td><b>D5</b> · 812</td><td>Not heating</td><td>5 h</td><td>—</td></tr>
+<tr><td><b>W2</b> · 812</td><td>Leaking</td><td>40 min</td><td>—</td></tr>
+<tr><td><b>W1</b> · 815</td><td>Door stuck</td><td>2 h</td><td>—</td></tr></table><div class="box pad"><div class="flex between"><h2 style="margin:0">W4 · Not draining</h2><span class="chip">Open</span></div>
+<p class="small muted">Building 812 · reported by a student 26 h ago · report #R-1042</p>
+<p>"Water stays in the drum after the cycle ends. Tried twice."</p><div class="img" style="height:120px;border-radius:6px"></div>
+<h4 class="mt" style="margin-bottom:4px">This machine recently</h4><p class="small" style="margin:0">2 repairs in the last 30 days · last: pump replaced, 20 Sep</p>
+<div class="flex mt"><a class="btn pri" href="#state1">Confirm</a><a class="btn" href="#state2">Dismiss</a><a class="btn ghost" href="w16.html">Open machine</a></div></div></div></div><div class="scrim"></div><div class="modal" style="width:460px"><div class="mh"><h2 style="margin:0">Dismiss report on W4</h2></div>
+<div class="mb"><div class="field"><label>Reason (required)</label><div class="inp sel err">Select a reason</div><span class="errmsg">Choose a reason to dismiss.</span><span class="hint">User error · Cannot reproduce · Duplicate report · Other</span></div>
+<div class="field"><label>Note for the student</label><div class="inp ta">Optional</div></div></div>
+<div class="mf"><a class="btn ghost" href="w15.html">Back</a><a class="btn pri" href="w15.html">Dismiss report</a></div></div></div><aside class="notes"><h3>Dismiss dialog: reason missing</h3><p>A reason is required before dismissing.</p></aside></div>
+</body></html>

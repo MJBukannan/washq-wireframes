@@ -1,0 +1,45 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>W09 QR check-in · WashQ wireframes</title>
+<link rel="stylesheet" href="wireframe.css"></head><body class="canvas">
+<div class="meta"><b>WashQ wireframes</b><span>W09 · QR check-in</span>
+<span>Covers S5</span><span class="sp"></span>
+<a href="index.html">All screens</a>
+<a href="w08.html">&larr; Prev</a>
+<a href="w10.html">Next &rarr;</a></div>
+<div class="label">Default state (clickable)</div>
+<div class="row"><div class="frame"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="">Machine Board</a><a href="w07.html" class="on">My Bookings</a><a href="w08.html" class="">Queue</a><a href="w10.html" class="">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Check in at the machine</h1></div>
+<div style="display:grid;grid-template-columns:1fr 360px;gap:24px"><div><div class="cam"><div class="scan"></div><div class="cap">Point your camera at the QR code on the machine <span class="ann">1</span></div></div></div>
+<div class="col"><div class="box pad"><h3>Checking in to</h3><p style="margin:0"><b>D2 Dryer</b> · Today 9:35–10:25 PM</p><p class="small muted">Check in before 9:45 PM</p></div><div class="box pad"><h3>Can't scan? <span class="ann">2</span></h3><div class="field"><label>Machine code</label><div class="inp">e.g. 812-D2-7Q4K</div></div>
+<a class="btn pri" style="width:100%" href="#state3">Check in</a><span class="ann">3</span></div></div></div></div></div><aside class="notes"><h3>W09 · QR check-in</h3>
+<p><b>Covers:</b> S5</p>
+<h4>Annotations</h4><ol><li><span class="ann">1</span><span>Camera view scans the QR sticker on the machine; the code holds the machine ID.</span></li><li><span class="ann">2</span><span>Manual code entry is the fallback when the camera can't be used.</span></li><li><span class="ann">3</span><span>The server accepts the check-in only if the student is signed in and the machine and time match their booking or claim (NFR-14).</span></li></ol></aside></div>
+<div class="label" id="state1">State: Camera permission denied</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="">Machine Board</a><a href="w07.html" class="on">My Bookings</a><a href="w08.html" class="">Queue</a><a href="w10.html" class="">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Check in at the machine</h1></div>
+<div style="display:grid;grid-template-columns:1fr 360px;gap:24px"><div><div class="cam" style="background:#eee;border:1.5px dashed var(--line)"><div style="text-align:center;color:var(--ink)"><b>Camera access is blocked</b><p class="small">Allow camera access in your browser settings, or type the code printed under the QR sticker.</p></div></div></div>
+<div class="col"><div class="box pad"><h3>Checking in to</h3><p style="margin:0"><b>D2 Dryer</b> · Today 9:35–10:25 PM</p><p class="small muted">Check in before 9:45 PM</p></div><div class="box pad"><h3>Can't scan? </h3><div class="field"><label>Machine code</label><div class="inp">e.g. 812-D2-7Q4K</div></div>
+<a class="btn pri" style="width:100%" href="#state3">Check in</a></div></div></div></div></div><aside class="notes"><h3>Camera permission denied</h3><p>Explains how to allow the camera and points to manual entry.</p></aside></div>
+<div class="label" id="state2">State: Wrong machine scanned</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="">Machine Board</a><a href="w07.html" class="on">My Bookings</a><a href="w08.html" class="">Queue</a><a href="w10.html" class="">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Check in at the machine</h1></div>
+<div style="display:grid;grid-template-columns:1fr 360px;gap:24px"><div><div class="cam"><div class="scan"></div><div class="cap">Scanned: W4</div></div><div class="banner mt"><span class="ico">!</span>This is W4, not your machine. Your booking is for D2 Dryer.</div></div>
+<div class="col"><div class="box pad"><h3>Checking in to</h3><p style="margin:0"><b>D2 Dryer</b> · Today 9:35–10:25 PM</p><p class="small muted">Check in before 9:45 PM</p></div><div class="box pad"><h3>Can't scan? </h3><div class="field"><label>Machine code</label><div class="inp">e.g. 812-D2-7Q4K</div></div>
+<a class="btn pri" style="width:100%" href="#state3">Check in</a></div></div></div></div></div><aside class="notes"><h3>Wrong machine scanned</h3><p>Scanned code does not match the booking; nothing changes.</p></aside></div>
+<div class="label" id="state3">State: Checked in</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="">Machine Board</a><a href="w07.html" class="on">My Bookings</a><a href="w08.html" class="">Queue</a><a href="w10.html" class="">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="page"><div class="box pad" style="max-width:560px;margin:40px auto;text-align:center;padding:40px">
+<div class="img" style="width:72px;height:72px;border-radius:50%;margin:0 auto 16px"></div>
+<h1>Checked in to D2</h1><p class="sub">Cycle ends at about 10:25 PM. We'll notify you when it's done.</p>
+<div class="flex" style="justify-content:center"><a class="btn pri" href="w04.html">Back to board</a><a class="btn ghost" href="w07.html">My Bookings</a></div></div></div></div><aside class="notes"><h3>Checked in</h3><p>Machine set to In use; a 'cycle finished' alert is scheduled.</p></aside></div>
+</body></html>

@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>W16 Staff: machine page (status, repair log, history) · WashQ wireframes</title>
+<link rel="stylesheet" href="wireframe.css"></head><body class="canvas">
+<div class="meta"><b>WashQ wireframes</b><span>W16 · Staff: machine page (status, repair log, history)</span>
+<span>Covers L2, L3</span><span class="sp"></span>
+<a href="index.html">All screens</a>
+<a href="w15.html">&larr; Prev</a>
+<a href="w17.html">Next &rarr;</a></div>
+<div class="label">Default state (clickable)</div>
+<div class="row"><div class="frame"><div class="hdr">
+<a class="logo" href="w14.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w14.html" class="">Overview</a><a href="w15.html" class="">Fault Reports</a><a href="w16.html" class="on">Machines</a><a href="w18.html" class="">Live Room</a><a href="w19.html" class="">Announcements</a><a href="w20.html" class="">Inventory</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Ahmed K. (Staff) &#9662;</a></div></div><div class="page"><div class="page-h"><div><div class="small muted">Building 812 / Machines</div><h1>W4 · Washer</h1></div>
+<div class="flex"><div class="field" style="margin:0"><label class="small">Status <span class="ann">1</span></label><div class="inp sel filled" style="width:210px">Under maintenance</div></div>
+<a class="btn" href="w17.html" style="align-self:flex-end">Schedule maintenance</a></div></div>
+<div class="tabs"><a href="w16.html" class="on">Repair log</a><a href="w16.html#state3" class="">History</a></div><div style="margin:-14px 0 12px"><span class="ann">4</span><span class="small muted">Repair log / History tabs</span></div><div style="display:grid;grid-template-columns:1fr 360px;gap:24px"><div class="box pad">
+<h2>Repair log entry <span class="ann">2</span></h2>
+<div class="field"><label>Linked report</label><div class="inp sel filled">#R-1042 · Not draining</div></div>
+<div class="field"><label>Work performed</label><div class="inp ta">Describe the repair (at least 10 characters)</div></div>
+<div class="field"><label>Parts used (from inventory)</label><div class="flex"><div class="inp sel filled" style="flex:1">Drain hose</div><div class="inp filled" style="width:80px">1</div><span class="btn ghost sm">Remove</span></div><span class="link small">+ Add part</span></div>
+<div class="field" style="max-width:200px"><label>Time spent (hours)</label><div class="inp">1.5</div></div>
+<div class="flex"><a class="btn pri" href="w16.html#state2">Return to service</a><span class="ann">3</span><a class="btn" href="w16.html">Save without returning</a></div></div>
+<div class="col"><div class="box pad"><h3>Machine info</h3><table class="t"><tr><td class="muted">Model</td><td>[Model]</td></tr><tr><td class="muted">Cycle</td><td>45 min</td></tr><tr><td class="muted">Out since</td><td>6 Oct, 7:20 PM</td></tr></table></div>
+<div class="box pad"><h3>Affected students</h3><p class="small" style="margin:0">2 bookings cancelled and re-offered when the report was confirmed.</p></div></div></div></div></div><aside class="notes"><h3>W16 · Staff: machine page (status, repair log, history)</h3>
+<p><b>Covers:</b> L2, L3</p>
+<h4>Annotations</h4><ol><li><span class="ann">1</span><span>Status dropdown: Available, Under maintenance, Out of order. A machine set to Under maintenance leaves the booking pool.</span></li><li><span class="ann">2</span><span>Repair log entry: linked report, work performed, parts used (picked from inventory, L7) and time spent.</span></li><li><span class="ann">3</span><span>Return to service needs a log entry; it sets the machine Available, closes linked reports as Resolved, notifies reporters and deducts parts from stock.</span></li><li><span class="ann">4</span><span>History tab: every report, repair and maintenance block for the machine, with totals and a frequent-failure flag.</span></li></ol></aside></div>
+<div class="label" id="state1">State: Missing log entry</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w14.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w14.html" class="">Overview</a><a href="w15.html" class="">Fault Reports</a><a href="w16.html" class="on">Machines</a><a href="w18.html" class="">Live Room</a><a href="w19.html" class="">Announcements</a><a href="w20.html" class="">Inventory</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Ahmed K. (Staff) &#9662;</a></div></div><div class="page"><div class="page-h"><div><div class="small muted">Building 812 / Machines</div><h1>W4 · Washer</h1></div>
+<div class="flex"><div class="field" style="margin:0"><label class="small">Status </label><div class="inp sel filled" style="width:210px">Under maintenance</div></div>
+<a class="btn" href="w17.html" style="align-self:flex-end">Schedule maintenance</a></div></div>
+<div class="tabs"><a href="w16.html" class="on">Repair log</a><a href="w16.html#state3" class="">History</a></div><div style="display:grid;grid-template-columns:1fr 360px;gap:24px"><div class="box pad">
+<h2>Repair log entry </h2><div class="banner"><span class="ico">!</span>Add a log entry before returning W4 to service.</div>
+<div class="field"><label>Linked report</label><div class="inp sel filled">#R-1042 · Not draining</div></div>
+<div class="field"><label>Work performed</label><div class="inp ta err"></div><span class="errmsg">Describe the work performed.</span></div>
+<div class="field"><label>Parts used (from inventory)</label><div class="flex"><div class="inp sel filled" style="flex:1">Drain hose</div><div class="inp filled" style="width:80px">1</div><span class="btn ghost sm">Remove</span></div><span class="link small">+ Add part</span></div>
+<div class="field" style="max-width:200px"><label>Time spent (hours)</label><div class="inp err">0</div><span class="errmsg">Must be more than 0.</span></div>
+<div class="flex"><a class="btn pri" href="w16.html#state2">Return to service</a><a class="btn" href="w16.html">Save without returning</a></div></div>
+<div class="col"><div class="box pad"><h3>Machine info</h3><table class="t"><tr><td class="muted">Model</td><td>[Model]</td></tr><tr><td class="muted">Cycle</td><td>45 min</td></tr><tr><td class="muted">Out since</td><td>6 Oct, 7:20 PM</td></tr></table></div>
+<div class="box pad"><h3>Affected students</h3><p class="small" style="margin:0">2 bookings cancelled and re-offered when the report was confirmed.</p></div></div></div></div></div><aside class="notes"><h3>Missing log entry</h3><p>Return to service is blocked until the work and time are filled in.</p></aside></div>
+<div class="label" id="state2">State: Returned to service</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w14.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w14.html" class="">Overview</a><a href="w15.html" class="">Fault Reports</a><a href="w16.html" class="on">Machines</a><a href="w18.html" class="">Live Room</a><a href="w19.html" class="">Announcements</a><a href="w20.html" class="">Inventory</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Ahmed K. (Staff) &#9662;</a></div></div><div class="page"><div class="page-h"><div><div class="small muted">Building 812 / Machines</div><h1>W4 · Washer</h1></div>
+<div class="flex"><div class="field" style="margin:0"><label class="small">Status </label><div class="inp sel filled" style="width:210px">Available</div></div>
+<a class="btn" href="w17.html" style="align-self:flex-end">Schedule maintenance</a></div></div>
+<div class="tabs"><a href="w16.html" class="on">Repair log</a><a href="w16.html#state3" class="">History</a></div><div style="display:grid;grid-template-columns:1fr 360px;gap:24px"><div class="box pad">
+<h2>Repair log entry </h2>
+<div class="field"><label>Linked report</label><div class="inp sel filled">#R-1042 · Not draining</div></div>
+<div class="field"><label>Work performed</label><div class="inp ta">Describe the repair (at least 10 characters)</div></div>
+<div class="field"><label>Parts used (from inventory)</label><div class="flex"><div class="inp sel filled" style="flex:1">Drain hose</div><div class="inp filled" style="width:80px">1</div><span class="btn ghost sm">Remove</span></div><span class="link small">+ Add part</span></div>
+<div class="field" style="max-width:200px"><label>Time spent (hours)</label><div class="inp">1.5</div></div>
+<div class="flex"><a class="btn pri" href="w16.html#state2">Return to service</a><a class="btn" href="w16.html">Save without returning</a></div></div>
+<div class="col"><div class="box pad"><h3>Machine info</h3><table class="t"><tr><td class="muted">Model</td><td>[Model]</td></tr><tr><td class="muted">Cycle</td><td>45 min</td></tr><tr><td class="muted">Out since</td><td>6 Oct, 7:20 PM</td></tr></table></div>
+<div class="box pad"><h3>Affected students</h3><p class="small" style="margin:0">2 bookings cancelled and re-offered when the report was confirmed.</p></div></div></div></div><div class="toast">&#10003; W4 returned to service · 2 reporting students notified · 1 drain hose deducted from stock</div></div><aside class="notes"><h3>Returned to service</h3><p>Toast summarises what changed.</p></aside></div>
+<div class="label" id="state3">State: History tab</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w14.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w14.html" class="">Overview</a><a href="w15.html" class="">Fault Reports</a><a href="w16.html" class="on">Machines</a><a href="w18.html" class="">Live Room</a><a href="w19.html" class="">Announcements</a><a href="w20.html" class="">Inventory</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Ahmed K. (Staff) &#9662;</a></div></div><div class="page"><div class="page-h"><div><div class="small muted">Building 812 / Machines</div><h1>W4 · Washer</h1></div>
+<div class="flex"><div class="field" style="margin:0"><label class="small">Status </label><div class="inp sel filled" style="width:210px">Under maintenance</div></div>
+<a class="btn" href="w17.html" style="align-self:flex-end">Schedule maintenance</a></div></div>
+<div class="tabs"><a href="w16.html" class="">Repair log</a><a href="w16.html#state3" class="on">History</a></div><div class="banner"><span class="ico">!</span><b>Frequent failure:</b>&nbsp;3 repairs in the last 30 days. Consider replacing this machine.</div>
+<div class="grid g3 mb"><div class="box pad"><div class="small muted">Repairs (30 days)</div><b style="font-size:22px">3</b></div><div class="box pad"><div class="small muted">Downtime (30 days)</div><b style="font-size:22px">41 h</b></div><div class="box pad"><div class="small muted">Fault reports (30 days)</div><b style="font-size:22px">5</b></div></div>
+<table class="t"><tr><th>Date</th><th>Type</th><th>Details</th><th>Parts</th><th>By</th><th>Downtime</th></tr>
+<tr><td>7 Oct</td><td>Repair</td><td>Drain blocked, cleared hose</td><td>—</td><td>Ahmed K.</td><td>26 h</td></tr>
+<tr><td>6 Oct</td><td>Report</td><td>Not draining (confirmed, High)</td><td></td><td>Student</td><td></td></tr>
+<tr><td>20 Sep</td><td>Repair</td><td>Drain pump replaced</td><td>Drain pump ×1</td><td>Ahmed K.</td><td>9 h</td></tr>
+<tr><td>12 Sep</td><td>Maintenance</td><td>Filter cleaning</td><td>—</td><td>Ahmed K.</td><td>1 h</td></tr></table>
+<div class="flex mt"><div class="inp sel" style="width:180px">Last 30 days</div><div class="inp sel" style="width:180px">All entry types</div></div></div></div><aside class="notes"><h3>History tab</h3><p>3+ repairs in 30 days triggers the Frequent failure flag.</p></aside></div>
+</body></html>

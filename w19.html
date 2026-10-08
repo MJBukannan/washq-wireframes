@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>W19 Staff: building announcements · WashQ wireframes</title>
+<link rel="stylesheet" href="wireframe.css"></head><body class="canvas">
+<div class="meta"><b>WashQ wireframes</b><span>W19 · Staff: building announcements</span>
+<span>Covers L6</span><span class="sp"></span>
+<a href="index.html">All screens</a>
+<a href="w18.html">&larr; Prev</a>
+<a href="w20.html">Next &rarr;</a></div>
+<div class="label">Default state (clickable)</div>
+<div class="row"><div class="frame"><div class="hdr">
+<a class="logo" href="w14.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w14.html" class="">Overview</a><a href="w15.html" class="">Fault Reports</a><a href="w16.html" class="">Machines</a><a href="w18.html" class="">Live Room</a><a href="w19.html" class="on">Announcements</a><a href="w20.html" class="">Inventory</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Ahmed K. (Staff) &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Announcements</h1></div>
+<div style="display:grid;grid-template-columns:1fr 480px;gap:24px"><div><table class="t"><tr><th>Title <span class="ann">1</span></th><th>Buildings</th><th>When</th><th>Status</th></tr>
+<tr><td>Water cut, use Building 815</td><td>812</td><td>Now – 11 PM</td><td><span class="chip solid">Live</span></td></tr>
+<tr><td>New dryers installed</td><td>815</td><td>1–3 Oct</td><td><span class="chip gray">Expired</span></td></tr></table></div><div class="box pad"><h2>New announcement <span class="ann">2</span></h2>
+<div class="field"><label>Buildings</label><div class="flex"><span class="chk"><i class="on"></i>Building 812</span><span class="chk"><i></i>Building 815</span></div></div>
+<div class="field"><label>Title</label><div class="inp filled">Room closed for cleaning</div><div class="flex between"><span></span><span class="hint">24 / 80</span></div></div>
+<div class="field"><label>Message</label><div class="inp ta filled">The laundry room will be closed 2:00–4:00 PM for deep cleaning.</div></div>
+<div class="grid g2" style="gap:0 12px"><div class="field"><label>Starts</label><div class="inp filled">9 Oct, 2:00 PM</div></div><div class="field"><label>Ends</label><div class="inp filled">9 Oct, 4:00 PM</div></div></div>
+<span class="chk"><i class="on"></i>Block bookings during this time <span class="ann">3</span></span>
+<div class="flex mt"><a class="btn pri" href="#state2">Publish</a><span class="ann">4</span><a class="btn ghost" href="w19.html">Cancel</a></div></div></div></div></div><aside class="notes"><h3>W19 · Staff: building announcements</h3>
+<p><b>Covers:</b> L6</p>
+<h4>Annotations</h4><ol><li><span class="ann">1</span><span>List of announcements with status: Scheduled, Live, Expired. Click to edit or end early.</span></li><li><span class="ann">2</span><span>Form: one or more assigned buildings, title (≤ 80 chars), message (≤ 500), start and end.</span></li><li><span class="ann">3</span><span>Optional: block bookings during the window (handled like preventive maintenance, L4).</span></li><li><span class="ann">4</span><span>Publish shows a banner on the building's board (W4) during the window and sends an in-app alert.</span></li></ol></aside></div>
+<div class="label" id="state1">State: Validation errors</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w14.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w14.html" class="">Overview</a><a href="w15.html" class="">Fault Reports</a><a href="w16.html" class="">Machines</a><a href="w18.html" class="">Live Room</a><a href="w19.html" class="on">Announcements</a><a href="w20.html" class="">Inventory</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Ahmed K. (Staff) &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Announcements</h1></div>
+<div style="display:grid;grid-template-columns:1fr 480px;gap:24px"><div><table class="t"><tr><th>Title </th><th>Buildings</th><th>When</th><th>Status</th></tr>
+<tr><td>Water cut, use Building 815</td><td>812</td><td>Now – 11 PM</td><td><span class="chip solid">Live</span></td></tr>
+<tr><td>New dryers installed</td><td>815</td><td>1–3 Oct</td><td><span class="chip gray">Expired</span></td></tr></table></div><div class="box pad"><h2>New announcement </h2>
+<div class="field"><label>Buildings</label><div class="flex"><span class="chk"><i class="on"></i>Building 812</span><span class="chk"><i></i>Building 815</span></div></div>
+<div class="field"><label>Title</label><div class="inp filled err">Laundry room closed this afternoon because the main water line is being repaired by the facilities team</div><div class="flex between"><span><span class="errmsg">Title must be 80 characters or fewer.</span></span><span class="hint">104 / 80</span></div></div>
+<div class="field"><label>Message</label><div class="inp ta filled">The laundry room will be closed 2:00–4:00 PM for deep cleaning.</div></div>
+<div class="grid g2" style="gap:0 12px"><div class="field"><label>Starts</label><div class="inp filled">9 Oct, 2:00 PM</div></div><div class="field"><label>Ends</label><div class="inp filled err">9 Oct, 1:00 PM</div><span class="errmsg">End must be after start.</span></div></div>
+<span class="chk"><i class="on"></i>Block bookings during this time </span>
+<div class="flex mt"><a class="btn pri" href="#state2">Publish</a><a class="btn ghost" href="w19.html">Cancel</a></div></div></div></div></div><aside class="notes"><h3>Validation errors</h3><p>Title too long and end time before start.</p></aside></div>
+<div class="label" id="state2">State: Published</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w14.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w14.html" class="">Overview</a><a href="w15.html" class="">Fault Reports</a><a href="w16.html" class="">Machines</a><a href="w18.html" class="">Live Room</a><a href="w19.html" class="on">Announcements</a><a href="w20.html" class="">Inventory</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Ahmed K. (Staff) &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Announcements</h1></div>
+<div style="display:grid;grid-template-columns:1fr 480px;gap:24px"><div><table class="t"><tr><th>Title </th><th>Buildings</th><th>When</th><th>Status</th></tr><tr><td><b>Room closed for cleaning</b></td><td>812</td><td>9 Oct 2–4 PM</td><td><span class="chip">Scheduled</span></td></tr>
+<tr><td>Water cut, use Building 815</td><td>812</td><td>Now – 11 PM</td><td><span class="chip solid">Live</span></td></tr>
+<tr><td>New dryers installed</td><td>815</td><td>1–3 Oct</td><td><span class="chip gray">Expired</span></td></tr></table></div><div class="box pad"><h2>New announcement </h2>
+<div class="field"><label>Buildings</label><div class="flex"><span class="chk"><i class="on"></i>Building 812</span><span class="chk"><i></i>Building 815</span></div></div>
+<div class="field"><label>Title</label><div class="inp filled">Room closed for cleaning</div><div class="flex between"><span></span><span class="hint">24 / 80</span></div></div>
+<div class="field"><label>Message</label><div class="inp ta filled">The laundry room will be closed 2:00–4:00 PM for deep cleaning.</div></div>
+<div class="grid g2" style="gap:0 12px"><div class="field"><label>Starts</label><div class="inp filled">9 Oct, 2:00 PM</div></div><div class="field"><label>Ends</label><div class="inp filled">9 Oct, 4:00 PM</div></div></div>
+<span class="chk"><i class="on"></i>Block bookings during this time </span>
+<div class="flex mt"><a class="btn pri" href="#state2">Publish</a><a class="btn ghost" href="w19.html">Cancel</a></div></div></div></div><div class="toast">&#10003; Published · 4 bookings in that window were moved or cancelled</div></div><aside class="notes"><h3>Published</h3><p>New announcement appears as Scheduled.</p></aside></div>
+</body></html>

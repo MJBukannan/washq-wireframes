@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>W08 Queue status and claim · WashQ wireframes</title>
+<link rel="stylesheet" href="wireframe.css"></head><body class="canvas">
+<div class="meta"><b>WashQ wireframes</b><span>W08 · Queue status and claim</span>
+<span>Covers S3</span><span class="sp"></span>
+<a href="index.html">All screens</a>
+<a href="w07.html">&larr; Prev</a>
+<a href="w09.html">Next &rarr;</a></div>
+<div class="label">Default state (clickable)</div>
+<div class="row"><div class="frame"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="">Machine Board</a><a href="w07.html" class="">My Bookings</a><a href="w08.html" class="on">Queue</a><a href="w10.html" class="">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Queue · Building 812</h1></div><div class="grid g2" style="max-width:900px">
+<div class="box pad"><div class="flex between"><h2 style="margin:0">Washer queue</h2><span class="chip solid">You're in line</span></div>
+<div class="flex mt" style="gap:32px"><div><div style="font-size:44px;font-weight:800">2</div><div class="small muted">your position <span class="ann">1</span></div></div>
+<div><div style="font-size:44px;font-weight:800">~35</div><div class="small muted">min estimated wait</div></div></div>
+<div class="small muted mt">5 students in this queue · you'll get an email and in-app alert when a washer frees up <span class="ann">2</span></div>
+<a class="btn ghost mt" href="w04.html">Leave queue</a><span class="ann">3</span></div>
+<div class="box pad"><h2 style="margin:0">Dryer queue</h2><p class="sub">2 students waiting · ~20 min</p><p class="small muted">A dryer (D2) is free right now. Book it instead of queueing.</p>
+<div class="flex"><a class="btn" href="w08.html">Join dryer queue</a><a class="btn ghost" href="w06.html">Book D2</a></div></div></div></div></div><aside class="notes"><h3>W08 · Queue status and claim</h3>
+<p><b>Covers:</b> S3</p>
+<h4>Annotations</h4><ol><li><span class="ann">1</span><span>Position and estimated wait update live as students ahead claim or leave.</span></li><li><span class="ann">2</span><span>When a machine frees up the first student gets an email and in-app alert and a claim window starts (10 min default, A5).</span></li><li><span class="ann">3</span><span>Leave queue removes the student immediately, no penalty.</span></li></ol></aside></div>
+<div class="label" id="state1">State: Your turn: claim window</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="">Machine Board</a><a href="w07.html" class="">My Bookings</a><a href="w08.html" class="on">Queue</a><a href="w10.html" class="">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Queue · Building 812</h1></div><div class="box pad" style="border:2.5px solid var(--ink);max-width:620px">
+<div class="flex between"><h2 style="margin:0">It's your turn: Washer W3 is free</h2><span class="chip solid">Claim within 09:41</span></div>
+<p class="sub">Claim it now, then check in at the machine by scanning its QR code. If you don't claim it in time, it goes to the next student.</p>
+<div class="flex"><a class="btn pri" href="w09.html">Claim W3</a><a class="btn ghost" href="w08.html">Skip my turn</a></div></div></div></div><aside class="notes"><h3>Your turn: claim window</h3><p>Countdown shows time left. Claim opens W9 to check in; Skip passes the turn on.</p></aside></div>
+<div class="label" id="state2">State: Claim window expired</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="">Machine Board</a><a href="w07.html" class="">My Bookings</a><a href="w08.html" class="on">Queue</a><a href="w10.html" class="">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Queue · Building 812</h1></div><div class="banner"><span class="ico">!</span><div><b>Your claim window for W3 expired.</b> You were removed from the washer queue and 1 no-show strike was recorded.</div></div>
+<a class="btn pri" href="w08.html">Rejoin washer queue</a></div></div><aside class="notes"><h3>Claim window expired</h3><p>Student removed and a strike recorded (A6).</p></aside></div>
+</body></html>

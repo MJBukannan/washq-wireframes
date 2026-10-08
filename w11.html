@@ -1,0 +1,123 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>W11 Flag unattended laundry (modal) · WashQ wireframes</title>
+<link rel="stylesheet" href="wireframe.css"></head><body class="canvas">
+<div class="meta"><b>WashQ wireframes</b><span>W11 · Flag unattended laundry (modal)</span>
+<span>Covers S7</span><span class="sp"></span>
+<a href="index.html">All screens</a>
+<a href="w10.html">&larr; Prev</a>
+<a href="w12.html">Next &rarr;</a></div>
+<div class="label">Default state (clickable)</div>
+<div class="row"><div class="frame"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="on">Machine Board</a><a href="w07.html" class="">My Bookings</a><a href="w08.html" class="">Queue</a><a href="w10.html" class="">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="ghostbg"><div class="page"><div class="page-h"><div><h1>Building 812 · Laundry Room</h1>
+<div class="sub"><span class="dot on"></span> Live · updated 9:40 PM </div></div>
+<div class="flex"><span class="seg"><span class="on">All</span><span>Washers</span><span>Dryers</span></span>
+<div class="inp sel" style="width:170px">Any status</div></div></div>
+
+<div style="display:grid;grid-template-columns:1fr 280px;gap:24px">
+<div class="grid g4"><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W1</span> <span class="small muted">Washer</span></a><span class="chip solid">Available</span></div>
+<div class="flex"><div class="sub">Free now · 45 min cycle</div></div><div class="acts"><a class="btn pri sm" href="w06.html">Book</a><a class="btn ghost sm" href="w10.html">Report</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W2</span> <span class="small muted">Washer</span></a><span class="chip">In use</span></div>
+<div class="flex"><div class="ring"></div><div class="sub">24 min left · ends 10:15 PM</div></div><div class="acts"><a class="btn sm" href="w08.html">Join queue</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W3</span> <span class="small muted">Washer</span></a><span class="chip gray">Reserved</span></div>
+<div class="flex"><div class="sub">Booked for 10:00 PM</div></div><div class="acts"><a class="btn sm" href="w06.html">See slots</a></div></div><div class="mcard off"><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W4</span> <span class="small muted">Washer</span></a><span class="chip dash">Out of order</span></div>
+<div class="flex"><div class="sub">Reported: does not drain. Under repair.</div></div><div class="acts"><span class="btn sm dis">Book</span></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D1</span> <span class="small muted">Dryer</span></a><span class="chip">In use</span></div>
+<div class="flex"><div class="ring"></div><div class="sub">12 min left · ends 9:52 PM</div></div><div class="acts"><a class="btn sm" href="w08.html">Join queue</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D2</span> <span class="small muted">Dryer</span></a><span class="chip solid">Available</span></div>
+<div class="flex"><div class="sub">Free now · 50 min cycle</div></div><div class="acts"><a class="btn pri sm" href="w06.html">Book</a><a class="btn ghost sm" href="w10.html">Report</a></div></div><div class="mcard hl"><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D3</span> <span class="small muted">Dryer</span></a><span class="chip">Finished</span></div>
+<div class="flex"><div class="sub">Cycle ended 18 min ago, load not collected</div></div><div class="acts"><a class="btn sm" href="w11.html">Flag unattended</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D4</span> <span class="small muted">Dryer</span></a><span class="chip solid">Available</span></div>
+<div class="flex"><div class="sub">Free now · 50 min cycle</div></div><div class="acts"><a class="btn pri sm" href="w06.html">Book</a><a class="btn ghost sm" href="w10.html">Report</a></div></div></div>
+<div class="col">
+<div class="box pad"><h3>My next booking</h3><p class="sub" style="margin:0">W3 · Today 10:00–10:45 PM</p>
+<p class="small muted">Check-in opens at 10:00 PM</p><a class="btn sm" href="w07.html">My Bookings</a></div>
+<div class="box pad"><h3>Queue</h3><p class="sub" style="margin:0">Not in a queue</p></div>
+<div class="box pad"><h3>Quiet times</h3><p class="sub" style="margin:0">Usually free: 6–9 AM</p><a class="link small" href="w13.html">See busy times</a></div>
+<a class="btn ghost" href="w09.html">Scan machine QR</a>
+</div></div></div></div><div class="scrim"></div><div class="modal" style="width:500px"><div class="mh"><h2 style="margin:0">Flag unattended laundry: D3</h2><a class="x" href="w04.html">&times;</a></div>
+<div class="mb"><p>D3's cycle ended <b>18 minutes ago</b> and the load hasn't been collected.</p>
+<ul class="small" style="padding-left:18px;margin:0"><li>The owner gets a reminder to collect it now. <span class="ann">1</span></li>
+<li>Your name is never shown to the owner. <span class="ann">2</span></li><li>If it's still there after 15 minutes, laundry staff are alerted.</li></ul></div><div class="mf"><a class="btn ghost" href="w04.html">Cancel</a><a class="btn pri" href="#state3">Flag unattended laundry</a><span class="ann">3</span></div></div></div><aside class="notes"><h3>W11 · Flag unattended laundry (modal)</h3>
+<p><b>Covers:</b> S7</p>
+<h4>Annotations</h4><ol><li><span class="ann">1</span><span>Allowed only after the machine's last cycle has finished; one flag per cycle.</span></li><li><span class="ann">2</span><span>The flagging student stays anonymous (NFR-7).</span></li><li><span class="ann">3</span><span>Flag notifies the owner; after 15 minutes the flag escalates to staff (L5) and counts toward the owner's strikes (A6).</span></li></ol></aside></div>
+<div class="label" id="state1">State: Cycle not finished</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="on">Machine Board</a><a href="w07.html" class="">My Bookings</a><a href="w08.html" class="">Queue</a><a href="w10.html" class="">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="ghostbg"><div class="page"><div class="page-h"><div><h1>Building 812 · Laundry Room</h1>
+<div class="sub"><span class="dot on"></span> Live · updated 9:40 PM </div></div>
+<div class="flex"><span class="seg"><span class="on">All</span><span>Washers</span><span>Dryers</span></span>
+<div class="inp sel" style="width:170px">Any status</div></div></div>
+
+<div style="display:grid;grid-template-columns:1fr 280px;gap:24px">
+<div class="grid g4"><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W1</span> <span class="small muted">Washer</span></a><span class="chip solid">Available</span></div>
+<div class="flex"><div class="sub">Free now · 45 min cycle</div></div><div class="acts"><a class="btn pri sm" href="w06.html">Book</a><a class="btn ghost sm" href="w10.html">Report</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W2</span> <span class="small muted">Washer</span></a><span class="chip">In use</span></div>
+<div class="flex"><div class="ring"></div><div class="sub">24 min left · ends 10:15 PM</div></div><div class="acts"><a class="btn sm" href="w08.html">Join queue</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W3</span> <span class="small muted">Washer</span></a><span class="chip gray">Reserved</span></div>
+<div class="flex"><div class="sub">Booked for 10:00 PM</div></div><div class="acts"><a class="btn sm" href="w06.html">See slots</a></div></div><div class="mcard off"><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W4</span> <span class="small muted">Washer</span></a><span class="chip dash">Out of order</span></div>
+<div class="flex"><div class="sub">Reported: does not drain. Under repair.</div></div><div class="acts"><span class="btn sm dis">Book</span></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D1</span> <span class="small muted">Dryer</span></a><span class="chip">In use</span></div>
+<div class="flex"><div class="ring"></div><div class="sub">12 min left · ends 9:52 PM</div></div><div class="acts"><a class="btn sm" href="w08.html">Join queue</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D2</span> <span class="small muted">Dryer</span></a><span class="chip solid">Available</span></div>
+<div class="flex"><div class="sub">Free now · 50 min cycle</div></div><div class="acts"><a class="btn pri sm" href="w06.html">Book</a><a class="btn ghost sm" href="w10.html">Report</a></div></div><div class="mcard hl"><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D3</span> <span class="small muted">Dryer</span></a><span class="chip">Finished</span></div>
+<div class="flex"><div class="sub">Cycle ended 18 min ago, load not collected</div></div><div class="acts"><a class="btn sm" href="w11.html">Flag unattended</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D4</span> <span class="small muted">Dryer</span></a><span class="chip solid">Available</span></div>
+<div class="flex"><div class="sub">Free now · 50 min cycle</div></div><div class="acts"><a class="btn pri sm" href="w06.html">Book</a><a class="btn ghost sm" href="w10.html">Report</a></div></div></div>
+<div class="col">
+<div class="box pad"><h3>My next booking</h3><p class="sub" style="margin:0">W3 · Today 10:00–10:45 PM</p>
+<p class="small muted">Check-in opens at 10:00 PM</p><a class="btn sm" href="w07.html">My Bookings</a></div>
+<div class="box pad"><h3>Queue</h3><p class="sub" style="margin:0">Not in a queue</p></div>
+<div class="box pad"><h3>Quiet times</h3><p class="sub" style="margin:0">Usually free: 6–9 AM</p><a class="link small" href="w13.html">See busy times</a></div>
+<a class="btn ghost" href="w09.html">Scan machine QR</a>
+</div></div></div></div><div class="scrim"></div><div class="modal" style="width:500px"><div class="mh"><h2 style="margin:0">Flag unattended laundry: D3</h2><a class="x" href="w04.html">&times;</a></div>
+<div class="mb"><div class="banner alt"><span class="ico">i</span>D1 is still running (12 min left). You can flag a load only after its cycle has finished.</div></div><div class="mf"><a class="btn ghost" href="w04.html">Cancel</a><span class="btn pri dis">Flag unattended laundry</span></div></div></div><aside class="notes"><h3>Cycle not finished</h3><p>Flag button disabled with the reason.</p></aside></div>
+<div class="label" id="state2">State: Already flagged</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="on">Machine Board</a><a href="w07.html" class="">My Bookings</a><a href="w08.html" class="">Queue</a><a href="w10.html" class="">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="ghostbg"><div class="page"><div class="page-h"><div><h1>Building 812 · Laundry Room</h1>
+<div class="sub"><span class="dot on"></span> Live · updated 9:40 PM </div></div>
+<div class="flex"><span class="seg"><span class="on">All</span><span>Washers</span><span>Dryers</span></span>
+<div class="inp sel" style="width:170px">Any status</div></div></div>
+
+<div style="display:grid;grid-template-columns:1fr 280px;gap:24px">
+<div class="grid g4"><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W1</span> <span class="small muted">Washer</span></a><span class="chip solid">Available</span></div>
+<div class="flex"><div class="sub">Free now · 45 min cycle</div></div><div class="acts"><a class="btn pri sm" href="w06.html">Book</a><a class="btn ghost sm" href="w10.html">Report</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W2</span> <span class="small muted">Washer</span></a><span class="chip">In use</span></div>
+<div class="flex"><div class="ring"></div><div class="sub">24 min left · ends 10:15 PM</div></div><div class="acts"><a class="btn sm" href="w08.html">Join queue</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W3</span> <span class="small muted">Washer</span></a><span class="chip gray">Reserved</span></div>
+<div class="flex"><div class="sub">Booked for 10:00 PM</div></div><div class="acts"><a class="btn sm" href="w06.html">See slots</a></div></div><div class="mcard off"><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W4</span> <span class="small muted">Washer</span></a><span class="chip dash">Out of order</span></div>
+<div class="flex"><div class="sub">Reported: does not drain. Under repair.</div></div><div class="acts"><span class="btn sm dis">Book</span></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D1</span> <span class="small muted">Dryer</span></a><span class="chip">In use</span></div>
+<div class="flex"><div class="ring"></div><div class="sub">12 min left · ends 9:52 PM</div></div><div class="acts"><a class="btn sm" href="w08.html">Join queue</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D2</span> <span class="small muted">Dryer</span></a><span class="chip solid">Available</span></div>
+<div class="flex"><div class="sub">Free now · 50 min cycle</div></div><div class="acts"><a class="btn pri sm" href="w06.html">Book</a><a class="btn ghost sm" href="w10.html">Report</a></div></div><div class="mcard hl"><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D3</span> <span class="small muted">Dryer</span></a><span class="chip">Finished</span></div>
+<div class="flex"><div class="sub">Cycle ended 18 min ago, load not collected</div></div><div class="acts"><a class="btn sm" href="w11.html">Flag unattended</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D4</span> <span class="small muted">Dryer</span></a><span class="chip solid">Available</span></div>
+<div class="flex"><div class="sub">Free now · 50 min cycle</div></div><div class="acts"><a class="btn pri sm" href="w06.html">Book</a><a class="btn ghost sm" href="w10.html">Report</a></div></div></div>
+<div class="col">
+<div class="box pad"><h3>My next booking</h3><p class="sub" style="margin:0">W3 · Today 10:00–10:45 PM</p>
+<p class="small muted">Check-in opens at 10:00 PM</p><a class="btn sm" href="w07.html">My Bookings</a></div>
+<div class="box pad"><h3>Queue</h3><p class="sub" style="margin:0">Not in a queue</p></div>
+<div class="box pad"><h3>Quiet times</h3><p class="sub" style="margin:0">Usually free: 6–9 AM</p><a class="link small" href="w13.html">See busy times</a></div>
+<a class="btn ghost" href="w09.html">Scan machine QR</a>
+</div></div></div></div><div class="scrim"></div><div class="modal" style="width:500px"><div class="mh"><h2 style="margin:0">Flag unattended laundry: D3</h2><a class="x" href="w04.html">&times;</a></div>
+<div class="mb"><div class="banner alt"><span class="ico">i</span>Someone already flagged D3 at 9:31 PM. The owner was notified; staff will be alerted at 9:46 PM if it's still there.</div></div><div class="mf"><a class="btn ghost" href="w04.html">Cancel</a><a class="btn" href="w04.html">OK</a></div></div></div><aside class="notes"><h3>Already flagged</h3><p>Shows when it was flagged and when staff will be alerted.</p></aside></div>
+<div class="label" id="state3">State: Owner notified</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="on">Machine Board</a><a href="w07.html" class="">My Bookings</a><a href="w08.html" class="">Queue</a><a href="w10.html" class="">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="ghostbg"><div class="page"><div class="page-h"><div><h1>Building 812 · Laundry Room</h1>
+<div class="sub"><span class="dot on"></span> Live · updated 9:40 PM </div></div>
+<div class="flex"><span class="seg"><span class="on">All</span><span>Washers</span><span>Dryers</span></span>
+<div class="inp sel" style="width:170px">Any status</div></div></div>
+
+<div style="display:grid;grid-template-columns:1fr 280px;gap:24px">
+<div class="grid g4"><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W1</span> <span class="small muted">Washer</span></a><span class="chip solid">Available</span></div>
+<div class="flex"><div class="sub">Free now · 45 min cycle</div></div><div class="acts"><a class="btn pri sm" href="w06.html">Book</a><a class="btn ghost sm" href="w10.html">Report</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W2</span> <span class="small muted">Washer</span></a><span class="chip">In use</span></div>
+<div class="flex"><div class="ring"></div><div class="sub">24 min left · ends 10:15 PM</div></div><div class="acts"><a class="btn sm" href="w08.html">Join queue</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W3</span> <span class="small muted">Washer</span></a><span class="chip gray">Reserved</span></div>
+<div class="flex"><div class="sub">Booked for 10:00 PM</div></div><div class="acts"><a class="btn sm" href="w06.html">See slots</a></div></div><div class="mcard off"><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">W4</span> <span class="small muted">Washer</span></a><span class="chip dash">Out of order</span></div>
+<div class="flex"><div class="sub">Reported: does not drain. Under repair.</div></div><div class="acts"><span class="btn sm dis">Book</span></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D1</span> <span class="small muted">Dryer</span></a><span class="chip">In use</span></div>
+<div class="flex"><div class="ring"></div><div class="sub">12 min left · ends 9:52 PM</div></div><div class="acts"><a class="btn sm" href="w08.html">Join queue</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D2</span> <span class="small muted">Dryer</span></a><span class="chip solid">Available</span></div>
+<div class="flex"><div class="sub">Free now · 50 min cycle</div></div><div class="acts"><a class="btn pri sm" href="w06.html">Book</a><a class="btn ghost sm" href="w10.html">Report</a></div></div><div class="mcard hl"><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D3</span> <span class="small muted">Dryer</span></a><span class="chip">Finished</span></div>
+<div class="flex"><div class="sub">Cycle ended 18 min ago, load not collected</div></div><div class="acts"><a class="btn sm" href="w11.html">Flag unattended</a></div></div><div class="mcard "><div class="top"><a href="w05.html" style="text-decoration:none"><span class="id">D4</span> <span class="small muted">Dryer</span></a><span class="chip solid">Available</span></div>
+<div class="flex"><div class="sub">Free now · 50 min cycle</div></div><div class="acts"><a class="btn pri sm" href="w06.html">Book</a><a class="btn ghost sm" href="w10.html">Report</a></div></div></div>
+<div class="col">
+<div class="box pad"><h3>My next booking</h3><p class="sub" style="margin:0">W3 · Today 10:00–10:45 PM</p>
+<p class="small muted">Check-in opens at 10:00 PM</p><a class="btn sm" href="w07.html">My Bookings</a></div>
+<div class="box pad"><h3>Queue</h3><p class="sub" style="margin:0">Not in a queue</p></div>
+<div class="box pad"><h3>Quiet times</h3><p class="sub" style="margin:0">Usually free: 6–9 AM</p><a class="link small" href="w13.html">See busy times</a></div>
+<a class="btn ghost" href="w09.html">Scan machine QR</a>
+</div></div></div></div><div class="scrim"></div><div class="modal" style="width:500px"><div class="mh"><h2 style="margin:0">Flag unattended laundry: D3</h2><a class="x" href="w04.html">&times;</a></div>
+<div class="mb"><div class="banner"><span class="ico">&#10003;</span>The owner has been notified. If the load is still there in 15 minutes, laundry staff will be alerted.</div></div><div class="mf"><a class="btn ghost" href="w04.html">Cancel</a><a class="btn pri" href="w04.html">Done</a></div></div></div><aside class="notes"><h3>Owner notified</h3><p>Success confirmation.</p></aside></div>
+</body></html>

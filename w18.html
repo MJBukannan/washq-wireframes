@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>W18 Staff: live room view (manual overrides) · WashQ wireframes</title>
+<link rel="stylesheet" href="wireframe.css"></head><body class="canvas">
+<div class="meta"><b>WashQ wireframes</b><span>W18 · Staff: live room view (manual overrides)</span>
+<span>Covers L5</span><span class="sp"></span>
+<a href="index.html">All screens</a>
+<a href="w17.html">&larr; Prev</a>
+<a href="w19.html">Next &rarr;</a></div>
+<div class="label">Default state (clickable)</div>
+<div class="row"><div class="frame"><div class="hdr">
+<a class="logo" href="w14.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w14.html" class="">Overview</a><a href="w15.html" class="">Fault Reports</a><a href="w16.html" class="">Machines</a><a href="w18.html" class="on">Live Room</a><a href="w19.html" class="">Announcements</a><a href="w20.html" class="">Inventory</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Ahmed K. (Staff) &#9662;</a></div></div><div class="page"><div class="page-h"><div><h1>Live room · Building 812</h1><div class="sub">Every action here needs a reason and is logged <span class="ann">5</span></div></div><div class="inp sel filled" style="width:180px">Building 812</div></div>
+<div class="grid g2"><div class="box pad"><h3>Current bookings <span class="ann">1</span></h3><table class="t"><tr><th>Machine</th><th>Student</th><th>Slot</th><th>Status</th><th></th></tr>
+<tr><td>W2</td><td>#3310</td><td>9:30–10:15</td><td>In use</td><td><a class="btn sm" href="#state1">Release</a></td></tr>
+<tr><td>D2</td><td>#2981</td><td>9:35–10:25</td><td>Check-in open</td><td><a class="btn sm" href="#state1">Extend +10 min</a></td></tr>
+<tr><td>W3</td><td>#4471</td><td>10:00–10:45</td><td>Upcoming</td><td><a class="btn ghost sm" href="#state1">Release</a></td></tr></table></div>
+<div class="col"><div class="box pad"><h3>Queues <span class="ann">2</span></h3><p class="small" style="margin:0">Washers: 5 waiting · next claim window ends 9:56 PM</p><p class="small muted" style="margin:0">Dryers: 2 waiting</p></div>
+<div class="box pad"><h3>Unattended-laundry flags <span class="ann">3</span></h3><div class="flex between"><span class="small"><b>D3</b> · cycle ended 9:13 PM · escalated 9:46 PM</span><a class="btn sm" href="#state2">Resolve</a></div></div>
+<div class="box pad"><h3>Recent no-show strikes <span class="ann">4</span></h3><div class="flex between"><span class="small">#4471 · W3 · 6 Oct 10:00 PM</span><a class="btn ghost sm" href="#state1">Remove strike</a></div></div></div></div></div></div><aside class="notes"><h3>W18 · Staff: live room view (manual overrides)</h3>
+<p><b>Covers:</b> L5</p>
+<h4>Annotations</h4><ol><li><span class="ann">1</span><span>Current bookings with Release (e.g. machine broke mid-cycle) and a one-time Extend of the grace period by 10 minutes.</span></li><li><span class="ann">2</span><span>Queue overview for each machine type.</span></li><li><span class="ann">3</span><span>Escalated unattended-laundry flags (S7). Resolve after moving the load to the holding shelf; the owner is notified.</span></li><li><span class="ann">4</span><span>Remove a no-show strike recorded in error.</span></li><li><span class="ann">5</span><span>Students appear by number, not name. Every override needs a reason and is written to the action log (NFR-13).</span></li></ol></aside></div>
+<div class="label" id="state1">State: Reason required</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w14.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w14.html" class="">Overview</a><a href="w15.html" class="">Fault Reports</a><a href="w16.html" class="">Machines</a><a href="w18.html" class="on">Live Room</a><a href="w19.html" class="">Announcements</a><a href="w20.html" class="">Inventory</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Ahmed K. (Staff) &#9662;</a></div></div><div class="page"><div class="page-h"><div><h1>Live room · Building 812</h1><div class="sub">Every action here needs a reason and is logged </div></div><div class="inp sel filled" style="width:180px">Building 812</div></div>
+<div class="grid g2"><div class="box pad"><h3>Current bookings </h3><table class="t"><tr><th>Machine</th><th>Student</th><th>Slot</th><th>Status</th><th></th></tr>
+<tr><td>W2</td><td>#3310</td><td>9:30–10:15</td><td>In use</td><td><a class="btn sm" href="#state1">Release</a></td></tr>
+<tr><td>D2</td><td>#2981</td><td>9:35–10:25</td><td>Check-in open</td><td><a class="btn sm" href="#state1">Extend +10 min</a></td></tr>
+<tr><td>W3</td><td>#4471</td><td>10:00–10:45</td><td>Upcoming</td><td><a class="btn ghost sm" href="#state1">Release</a></td></tr></table></div>
+<div class="col"><div class="box pad"><h3>Queues </h3><p class="small" style="margin:0">Washers: 5 waiting · next claim window ends 9:56 PM</p><p class="small muted" style="margin:0">Dryers: 2 waiting</p></div>
+<div class="box pad"><h3>Unattended-laundry flags </h3><div class="flex between"><span class="small"><b>D3</b> · cycle ended 9:13 PM · escalated 9:46 PM</span><a class="btn sm" href="#state2">Resolve</a></div></div>
+<div class="box pad"><h3>Recent no-show strikes </h3><div class="flex between"><span class="small">#4471 · W3 · 6 Oct 10:00 PM</span><a class="btn ghost sm" href="#state1">Remove strike</a></div></div></div></div></div><div class="scrim"></div><div class="modal" style="width:460px"><div class="mh"><h2 style="margin:0">Remove strike</h2></div>
+<div class="mb"><p>Student #4471 · no-show on W3, 6 Oct 10:00 PM</p><div class="field"><label>Reason (required)</label><div class="inp ta filled">Machine W3 was actually out of order at that time.</div></div>
+<p class="small muted">This action is logged with your name and visible to admins.</p></div>
+<div class="mf"><a class="btn ghost" href="w18.html">Cancel</a><a class="btn pri" href="w18.html">Remove strike</a></div></div></div><aside class="notes"><h3>Reason required</h3><p>Every override opens a reason dialog before it is applied.</p></aside></div>
+<div class="label" id="state2">State: Override applied</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w14.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w14.html" class="">Overview</a><a href="w15.html" class="">Fault Reports</a><a href="w16.html" class="">Machines</a><a href="w18.html" class="on">Live Room</a><a href="w19.html" class="">Announcements</a><a href="w20.html" class="">Inventory</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Ahmed K. (Staff) &#9662;</a></div></div><div class="page"><div class="page-h"><div><h1>Live room · Building 812</h1><div class="sub">Every action here needs a reason and is logged </div></div><div class="inp sel filled" style="width:180px">Building 812</div></div>
+<div class="grid g2"><div class="box pad"><h3>Current bookings </h3><table class="t"><tr><th>Machine</th><th>Student</th><th>Slot</th><th>Status</th><th></th></tr>
+<tr><td>W2</td><td>#3310</td><td>9:30–10:15</td><td>In use</td><td><a class="btn sm" href="#state1">Release</a></td></tr>
+<tr><td>D2</td><td>#2981</td><td>9:35–10:25</td><td>Check-in open</td><td><a class="btn sm" href="#state1">Extend +10 min</a></td></tr>
+<tr><td>W3</td><td>#4471</td><td>10:00–10:45</td><td>Upcoming</td><td><a class="btn ghost sm" href="#state1">Release</a></td></tr></table></div>
+<div class="col"><div class="box pad"><h3>Queues </h3><p class="small" style="margin:0">Washers: 5 waiting · next claim window ends 9:56 PM</p><p class="small muted" style="margin:0">Dryers: 2 waiting</p></div>
+<div class="box pad"><h3>Unattended-laundry flags </h3><div class="flex between"><span class="small"><b>D3</b> · cycle ended 9:13 PM · escalated 9:46 PM</span><a class="btn sm" href="#state2">Resolve</a></div></div>
+<div class="box pad"><h3>Recent no-show strikes </h3><div class="flex between"><span class="small">#4471 · W3 · 6 Oct 10:00 PM</span><a class="btn ghost sm" href="#state1">Remove strike</a></div></div></div></div></div><div class="toast">&#10003; Flag on D3 resolved · load moved to holding shelf · owner notified</div></div><aside class="notes"><h3>Override applied</h3><p>Board, queue and student are updated immediately.</p></aside></div>
+</body></html>

@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>W01 Sign in · WashQ wireframes</title>
+<link rel="stylesheet" href="wireframe.css"></head><body class="canvas">
+<div class="meta"><b>WashQ wireframes</b><span>W01 · Sign in</span>
+<span>Covers FR-0.2</span><span class="sp"></span>
+<a href="index.html">All screens</a>
+
+<a href="w02.html">Next &rarr;</a></div>
+<div class="label">Default state (clickable)</div>
+<div class="row"><div class="frame"><div style="display:flex;min-height:760px">
+<div style="flex:1;background:var(--fill);border-right:1.5px solid var(--line);display:flex;flex-direction:column;justify-content:center;padding:64px">
+<div class="logo" style="font-size:28px"><i></i>WashQ</div>
+<p style="font-size:20px;max-width:420px;margin:18px 0 6px">See every washer and dryer in your building before you carry the basket down.</p>
+<p class="sub">KFUPM Dormitory Laundry</p>
+<div class="img mt2" style="height:240px;max-width:460px;border-radius:6px"></div></div>
+<div style="width:560px;display:flex;align-items:center;justify-content:center;padding:40px">
+<div style="width:440px"><h1>Sign in</h1><p class="sub mb">Use your KFUPM email.</p>
+<div class="field"><label>KFUPM email <span class="ann">1</span></label><div class="inp">name@kfupm.edu.sa</div></div>
+<div class="field"><label>Password <span class="ann">2</span></label><div class="inp">Password</div></div>
+<div class="flex between mb"><span class="chk"><i></i>Keep me signed in</span><a class="link small" href="w03.html">Forgot password? <span class="ann">4</span></a></div>
+<a class="btn pri" style="width:100%" href="w04.html">Sign in</a> <span class="ann">3</span>
+<p class="sub mt" style="text-align:center">New resident? <a class="link" href="w02.html">Create an account</a> <span class="ann">5</span></p></div></div></div></div><aside class="notes"><h3>W01 · Sign in</h3>
+<p><b>Covers:</b> FR-0.2</p>
+<h4>Annotations</h4><ol><li><span class="ann">1</span><span>Email must be a @kfupm.edu.sa address; validated on submit.</span></li><li><span class="ann">2</span><span>Password field masks input.</span></li><li><span class="ann">3</span><span>Sign in sends the user to their role's home: Student → W4 Machine Board, Staff → W14 Overview, Admin → W21 Buildings.</span></li><li><span class="ann">4</span><span>Forgot password opens W3.</span></li><li><span class="ann">5</span><span>Students without an account go to W2. Staff and admin accounts are created by an admin (A3), so there is no staff sign-up.</span></li></ol></aside></div>
+<div class="label" id="state1">State: Wrong credentials</div><div class="row"><div class="frame short"><div style="display:flex;min-height:760px">
+<div style="flex:1;background:var(--fill);border-right:1.5px solid var(--line);display:flex;flex-direction:column;justify-content:center;padding:64px">
+<div class="logo" style="font-size:28px"><i></i>WashQ</div>
+<p style="font-size:20px;max-width:420px;margin:18px 0 6px">See every washer and dryer in your building before you carry the basket down.</p>
+<p class="sub">KFUPM Dormitory Laundry</p>
+<div class="img mt2" style="height:240px;max-width:460px;border-radius:6px"></div></div>
+<div style="width:560px;display:flex;align-items:center;justify-content:center;padding:40px">
+<div style="width:440px"><h1>Sign in</h1><p class="sub mb">Use your KFUPM email.</p><div class="banner"><span class="ico">!</span>Email or password is incorrect.</div>
+<div class="field"><label>KFUPM email <span class="ann">1</span></label><div class="inp filled">s2023xxxxx@kfupm.edu.sa</div></div>
+<div class="field"><label>Password <span class="ann">2</span></label><div class="inp filled err">••••••••</div></div>
+<div class="flex between mb"><span class="chk"><i></i>Keep me signed in</span><a class="link small" href="w03.html">Forgot password? <span class="ann">4</span></a></div>
+<a class="btn pri" style="width:100%" href="w04.html">Sign in</a> <span class="ann">3</span>
+<p class="sub mt" style="text-align:center">New resident? <a class="link" href="w02.html">Create an account</a> <span class="ann">5</span></p></div></div></div></div><aside class="notes"><h3>Wrong credentials</h3><p>Generic message that never says which field was wrong. Password field is cleared and outlined.</p></aside></div>
+<div class="label" id="state2">State: Locked after 5 failed attempts</div><div class="row"><div class="frame short"><div style="display:flex;min-height:760px">
+<div style="flex:1;background:var(--fill);border-right:1.5px solid var(--line);display:flex;flex-direction:column;justify-content:center;padding:64px">
+<div class="logo" style="font-size:28px"><i></i>WashQ</div>
+<p style="font-size:20px;max-width:420px;margin:18px 0 6px">See every washer and dryer in your building before you carry the basket down.</p>
+<p class="sub">KFUPM Dormitory Laundry</p>
+<div class="img mt2" style="height:240px;max-width:460px;border-radius:6px"></div></div>
+<div style="width:560px;display:flex;align-items:center;justify-content:center;padding:40px">
+<div style="width:440px"><h1>Sign in</h1><p class="sub mb">Use your KFUPM email.</p><div class="banner"><span class="ico">!</span><div><b>Too many attempts.</b><br><span class="small">Sign-in is locked for 15 minutes. You can reset your password instead.</span></div></div>
+<div class="field"><label>KFUPM email <span class="ann">1</span></label><div class="inp filled">s2023xxxxx@kfupm.edu.sa</div></div>
+<div class="field"><label>Password <span class="ann">2</span></label><div class="inp">••••••••</div></div>
+<div class="flex between mb"><span class="chk"><i></i>Keep me signed in</span><a class="link small" href="w03.html">Forgot password? <span class="ann">4</span></a></div>
+<a class="btn pri dis" style="width:100%" href="w04.html">Sign in</a> <span class="ann">3</span>
+<p class="sub mt" style="text-align:center">New resident? <a class="link" href="w02.html">Create an account</a> <span class="ann">5</span></p></div></div></div></div><aside class="notes"><h3>Locked after 5 failed attempts</h3><p>Sign in button disabled for 15 minutes; the reset-password link stays available.</p></aside></div>
+</body></html>

@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>W07 My Bookings · WashQ wireframes</title>
+<link rel="stylesheet" href="wireframe.css"></head><body class="canvas">
+<div class="meta"><b>WashQ wireframes</b><span>W07 · My Bookings</span>
+<span>Covers S2, S5</span><span class="sp"></span>
+<a href="index.html">All screens</a>
+<a href="w06.html">&larr; Prev</a>
+<a href="w08.html">Next &rarr;</a></div>
+<div class="label">Default state (clickable)</div>
+<div class="row"><div class="frame"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="">Machine Board</a><a href="w07.html" class="on">My Bookings</a><a href="w08.html" class="">Queue</a><a href="w10.html" class="">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="page"><div class="page-h"><h1>My Bookings</h1><a class="btn pri" href="w04.html">New booking</a></div>
+<div class="tabs"><span class="on">Upcoming</span><span>Past</span></div><span class="ann">1</span>
+<table class="t"><tr><th>Machine</th><th>Date</th><th>Time</th><th>Status</th><th>Actions</th></tr><tr><td><b>W3</b> Washer</td><td>Today</td><td>10:00–10:45 PM</td><td><span class="chip gray">Check-in opens 10:00</span></td>
+<td><a class="btn sm" href="w06.html">Reschedule</a> <a class="btn ghost sm" href="#state1">Cancel</a><span class="ann">2</span></td></tr>
+<tr><td><b>D2</b> Dryer</td><td>Today</td><td>9:35–10:25 PM</td><td><span class="chip solid">Check in now · 08:42 left</span></td>
+<td><a class="btn pri sm" href="w09.html">Check in</a><span class="ann">3</span></td></tr>
+<tr><td><b>W1</b> Washer</td><td>Tomorrow</td><td>8:00–8:45 AM</td><td><span class="chip">Upcoming</span></td>
+<td><a class="btn sm" href="w06.html">Reschedule</a> <a class="btn ghost sm" href="#state1">Cancel</a></td></tr></table>
+<p class="small muted mt">Reminder emails are sent 15 minutes before each slot. Change this in <a class="link" href="w12.html">Settings</a>.</p></div></div><aside class="notes"><h3>W07 · My Bookings</h3>
+<p><b>Covers:</b> S2, S5</p>
+<h4>Annotations</h4><ol><li><span class="ann">1</span><span>Upcoming and Past tabs. Past shows completed, cancelled and no-show bookings.</span></li><li><span class="ann">2</span><span>Reschedule opens W6 for the same machine; Cancel asks for confirmation first.</span></li><li><span class="ann">3</span><span>When the grace period is open the row shows a live countdown and a Check in button that opens the QR scanner (W9).</span></li></ol></aside></div>
+<div class="label" id="state1">State: Cancel confirmation</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="">Machine Board</a><a href="w07.html" class="on">My Bookings</a><a href="w08.html" class="">Queue</a><a href="w10.html" class="">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="page"><div class="page-h"><h1>My Bookings</h1><a class="btn pri" href="w04.html">New booking</a></div>
+<div class="tabs"><span class="on">Upcoming</span><span>Past</span></div><span class="ann">1</span>
+<table class="t"><tr><th>Machine</th><th>Date</th><th>Time</th><th>Status</th><th>Actions</th></tr><tr><td><b>W3</b> Washer</td><td>Today</td><td>10:00–10:45 PM</td><td><span class="chip gray">Check-in opens 10:00</span></td>
+<td><a class="btn sm" href="w06.html">Reschedule</a> <a class="btn ghost sm" href="#state1">Cancel</a><span class="ann">2</span></td></tr>
+<tr><td><b>D2</b> Dryer</td><td>Today</td><td>9:35–10:25 PM</td><td><span class="chip solid">Check in now · 08:42 left</span></td>
+<td><a class="btn pri sm" href="w09.html">Check in</a><span class="ann">3</span></td></tr>
+<tr><td><b>W1</b> Washer</td><td>Tomorrow</td><td>8:00–8:45 AM</td><td><span class="chip">Upcoming</span></td>
+<td><a class="btn sm" href="w06.html">Reschedule</a> <a class="btn ghost sm" href="#state1">Cancel</a></td></tr></table>
+<p class="small muted mt">Reminder emails are sent 15 minutes before each slot. Change this in <a class="link" href="w12.html">Settings</a>.</p></div><div class="scrim"></div><div class="modal" style="width:440px"><div class="mh"><h2 style="margin:0">Cancel this booking?</h2></div>
+<div class="mb"><p>W3 Washer · Today 10:00–10:45 PM</p><p class="small muted">The slot will be offered to the next student in the queue. Cancelling is free until the slot starts.</p></div>
+<div class="mf"><a class="btn ghost" href="w07.html">Keep booking</a><a class="btn pri" href="w07.html">Cancel booking</a></div></div></div><aside class="notes"><h3>Cancel confirmation</h3><p>Confirmation dialog; on confirm the slot is freed and offered to the queue.</p></aside></div>
+<div class="label" id="state2">State: Released as no-show</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="">Machine Board</a><a href="w07.html" class="on">My Bookings</a><a href="w08.html" class="">Queue</a><a href="w10.html" class="">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="page"><div class="page-h"><h1>My Bookings</h1><a class="btn pri" href="w04.html">New booking</a></div>
+<div class="banner"><span class="ico">!</span>Your 10:00 PM booking on W3 was released because you did not check in within 10 minutes. This counts as 1 strike (3 strikes = 7-day booking ban).</div><div class="tabs"><span class="on">Upcoming</span><span>Past</span></div><span class="ann">1</span>
+<table class="t"><tr><th>Machine</th><th>Date</th><th>Time</th><th>Status</th><th>Actions</th></tr><tr><td><b>W3</b> Washer</td><td>Today</td><td>10:00–10:45 PM</td><td><span class="chip dash">Released · no check-in</span></td><td class="small">Strike 1 of 3 recorded</td></tr>
+<tr><td><b>D2</b> Dryer</td><td>Today</td><td>9:35–10:25 PM</td><td><span class="chip solid">Check in now · 08:42 left</span></td>
+<td><a class="btn pri sm" href="w09.html">Check in</a><span class="ann">3</span></td></tr>
+<tr><td><b>W1</b> Washer</td><td>Tomorrow</td><td>8:00–8:45 AM</td><td><span class="chip">Upcoming</span></td>
+<td><a class="btn sm" href="w06.html">Reschedule</a> <a class="btn ghost sm" href="#state1">Cancel</a></td></tr></table>
+<p class="small muted mt">Reminder emails are sent 15 minutes before each slot. Change this in <a class="link" href="w12.html">Settings</a>.</p></div></div><aside class="notes"><h3>Released as no-show</h3><p>No check-in within the grace period: booking released, strike recorded and explained.</p></aside></div>
+</body></html>

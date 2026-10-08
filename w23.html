@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>W23 Admin: users and staff assignment · WashQ wireframes</title>
+<link rel="stylesheet" href="wireframe.css"></head><body class="canvas">
+<div class="meta"><b>WashQ wireframes</b><span>W23 · Admin: users and staff assignment</span>
+<span>Covers A3, A4</span><span class="sp"></span>
+<a href="index.html">All screens</a>
+<a href="w22.html">&larr; Prev</a>
+<a href="w24.html">Next &rarr;</a></div>
+<div class="label">Default state (clickable)</div>
+<div class="row"><div class="frame"><div class="hdr">
+<a class="logo" href="w21.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w21.html" class="">Buildings</a><a href="w22.html" class="">Machines</a><a href="w23.html" class="on">Users</a><a href="w24.html" class="">Rules & Penalties</a><a href="w25.html" class="">Statistics</a><a href="w26.html" class="">Reports</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Admin &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Users</h1><a class="btn pri" href="#state1">Create staff or admin account</a><span class="ann">2</span></div>
+<div class="flex mb"><div class="inp" style="width:320px">Search name or email</div><div class="inp sel" style="width:160px">All roles</div><span class="ann">1</span></div>
+<table class="t"><tr><th>Name</th><th>Email</th><th>Role</th><th>Buildings</th><th>Status</th><th></th></tr><tr><td>Ahmed K.</td><td>ahmed.k@kfupm.edu.sa</td><td><span class="chip">Staff</span></td><td>812, 815</td><td>Active</td><td><a class="link small" href="#state2">Assign buildings</a><span class="ann">3</span> · <span class="link small">Disable</span></td></tr>
+<tr><td>Omar S.</td><td>omar.s@kfupm.edu.sa</td><td><span class="chip">Staff</span></td><td>818</td><td>Active</td><td><a class="link small" href="#state2">Assign buildings</a> · <span class="link small">Disable</span></td></tr>
+<tr><td>Faisal A.</td><td>s2023xxxxx@kfupm.edu.sa</td><td><span class="chip gray">Student</span></td><td>812</td><td>Suspended to 14 Oct</td><td><span class="link small">Reset password</span> · <span class="link small">Disable</span></td></tr>
+<tr><td>You</td><td>admin@kfupm.edu.sa</td><td><span class="chip solid">Admin</span></td><td>—</td><td>Active</td><td><span class="small muted">Disable <span class="ann">4</span></span></td></tr></table></div></div><aside class="notes"><h3>W23 · Admin: users and staff assignment</h3>
+<p><b>Covers:</b> A3, A4</p>
+<h4>Annotations</h4><ol><li><span class="ann">1</span><span>Search by name or email; filter by role.</span></li><li><span class="ann">2</span><span>Create staff or admin accounts (students sign up themselves). The new user gets a set-password email.</span></li><li><span class="ann">3</span><span>Assign buildings: staff see only their buildings in L1–L8; reports go to everyone assigned to that building.</span></li><li><span class="ann">4</span><span>Admins can't disable their own account, and at least one active admin must remain.</span></li></ol></aside></div>
+<div class="label" id="state1">State: Create account</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w21.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w21.html" class="">Buildings</a><a href="w22.html" class="">Machines</a><a href="w23.html" class="on">Users</a><a href="w24.html" class="">Rules & Penalties</a><a href="w25.html" class="">Statistics</a><a href="w26.html" class="">Reports</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Admin &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Users</h1><a class="btn pri" href="#state1">Create staff or admin account</a></div>
+<div class="flex mb"><div class="inp" style="width:320px">Search name or email</div><div class="inp sel" style="width:160px">All roles</div></div>
+<table class="t"><tr><th>Name</th><th>Email</th><th>Role</th><th>Buildings</th><th>Status</th><th></th></tr><tr><td>Ahmed K.</td><td>ahmed.k@kfupm.edu.sa</td><td><span class="chip">Staff</span></td><td>812, 815</td><td>Active</td><td><a class="link small" href="#state2">Assign buildings</a> · <span class="link small">Disable</span></td></tr>
+<tr><td>Omar S.</td><td>omar.s@kfupm.edu.sa</td><td><span class="chip">Staff</span></td><td>818</td><td>Active</td><td><a class="link small" href="#state2">Assign buildings</a> · <span class="link small">Disable</span></td></tr>
+<tr><td>Faisal A.</td><td>s2023xxxxx@kfupm.edu.sa</td><td><span class="chip gray">Student</span></td><td>812</td><td>Suspended to 14 Oct</td><td><span class="link small">Reset password</span> · <span class="link small">Disable</span></td></tr>
+<tr><td>You</td><td>admin@kfupm.edu.sa</td><td><span class="chip solid">Admin</span></td><td>—</td><td>Active</td><td><span class="small muted">Disable </span></td></tr></table></div><div class="scrim"></div><div class="modal" style="width:480px"><div class="mh"><h2 style="margin:0">Create account</h2></div><div class="mb"><div class="field"><label>Full name</label><div class="inp">Full name</div></div>
+<div class="field"><label>KFUPM email</label><div class="inp">name@kfupm.edu.sa</div></div>
+<div class="field"><label>Role</label><span class="seg"><span class="on">Staff</span><span>Admin</span></span></div>
+<p class="small muted">A set-password link is emailed to the new user.</p></div><div class="mf"><a class="btn ghost" href="w23.html">Cancel</a><a class="btn pri" href="w23.html">Create account</a></div></div></div><aside class="notes"><h3>Create account</h3><p>Email must be unique and @kfupm.edu.sa.</p></aside></div>
+<div class="label" id="state2">State: Assign buildings: coverage warning</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w21.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w21.html" class="">Buildings</a><a href="w22.html" class="">Machines</a><a href="w23.html" class="on">Users</a><a href="w24.html" class="">Rules & Penalties</a><a href="w25.html" class="">Statistics</a><a href="w26.html" class="">Reports</a></nav>
+<div class="tools"><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Admin &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Users</h1><a class="btn pri" href="#state1">Create staff or admin account</a></div>
+<div class="flex mb"><div class="inp" style="width:320px">Search name or email</div><div class="inp sel" style="width:160px">All roles</div></div>
+<table class="t"><tr><th>Name</th><th>Email</th><th>Role</th><th>Buildings</th><th>Status</th><th></th></tr><tr><td>Ahmed K.</td><td>ahmed.k@kfupm.edu.sa</td><td><span class="chip">Staff</span></td><td>812, 815</td><td>Active</td><td><a class="link small" href="#state2">Assign buildings</a> · <span class="link small">Disable</span></td></tr>
+<tr><td>Omar S.</td><td>omar.s@kfupm.edu.sa</td><td><span class="chip">Staff</span></td><td>818</td><td>Active</td><td><a class="link small" href="#state2">Assign buildings</a> · <span class="link small">Disable</span></td></tr>
+<tr><td>Faisal A.</td><td>s2023xxxxx@kfupm.edu.sa</td><td><span class="chip gray">Student</span></td><td>812</td><td>Suspended to 14 Oct</td><td><span class="link small">Reset password</span> · <span class="link small">Disable</span></td></tr>
+<tr><td>You</td><td>admin@kfupm.edu.sa</td><td><span class="chip solid">Admin</span></td><td>—</td><td>Active</td><td><span class="small muted">Disable </span></td></tr></table></div><div class="scrim"></div><div class="modal" style="width:480px"><div class="mh"><h2 style="margin:0">Assign buildings · Ahmed K.</h2></div><div class="mb"><span class="chk"><i class="on"></i>Building 812</span><span class="chk"><i></i>Building 815</span><span class="chk"><i></i>Building 818</span>
+<div class="banner mt"><span class="ico">!</span><span class="small">Unticking 815 leaves <b>Building 815 with no staff</b>. Fault reports there would go unanswered.</span></div></div><div class="mf"><a class="btn ghost" href="w23.html">Cancel</a><a class="btn pri" href="w23.html">Save anyway</a></div></div></div><aside class="notes"><h3>Assign buildings: coverage warning</h3><p>Warns when a building would be left with no staff.</p></aside></div>
+</body></html>

@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>W10 Report a problem and My Reports · WashQ wireframes</title>
+<link rel="stylesheet" href="wireframe.css"></head><body class="canvas">
+<div class="meta"><b>WashQ wireframes</b><span>W10 · Report a problem and My Reports</span>
+<span>Covers S4</span><span class="sp"></span>
+<a href="index.html">All screens</a>
+<a href="w09.html">&larr; Prev</a>
+<a href="w11.html">Next &rarr;</a></div>
+<div class="label">Default state (clickable)</div>
+<div class="row"><div class="frame"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="">Machine Board</a><a href="w07.html" class="">My Bookings</a><a href="w08.html" class="">Queue</a><a href="w10.html" class="on">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Report a problem</h1></div>
+<div style="display:grid;grid-template-columns:1fr 420px;gap:28px">
+<div class="box pad"><div class="field"><label>Machine <span class="ann">1</span></label><div class="inp sel filled">W4 · Washer · Building 812</div></div>
+<div class="field"><label>What's wrong? <span class="ann">2</span></label><div class="grid g3" style="gap:4px 12px"><span class="chk radio"><i class=""></i>Does not start</span><span class="chk radio"><i class=""></i>Leaking</span><span class="chk radio"><i class="on"></i>Not draining</span><span class="chk radio"><i class=""></i>Not heating</span><span class="chk radio"><i class=""></i>Door stuck</span><span class="chk radio"><i class=""></i>Other</span></div></div>
+<div class="field"><label>Description</label><div class="inp ta">Describe what happened (10–500 characters)</div>
+<div class="flex between"><span class="hint">Be specific: error code, noises, water level</span><span class="hint">0 / 500</span></div></div>
+<div class="field"><label>Photo (optional) <span class="ann">3</span></label><div class="fillbox" style="height:90px;display:flex;align-items:center;justify-content:center;color:var(--ink2)">Drag a photo here or click to upload · JPG or PNG, max 5 MB</div></div>
+<div class="flex"><a class="btn pri" href="#state2">Submit report</a><span class="ann">4</span><a class="btn ghost" href="w04.html">Cancel</a></div></div>
+<div><h2>My Reports <span class="ann">5</span></h2><table class="t"><tr><th>Machine</th><th>Issue</th><th>Status</th></tr>
+
+<tr><td>D2</td><td>Does not start</td><td><span class="chip solid">Resolved</span></td></tr>
+<tr><td>W1</td><td>Door stuck</td><td><span class="chip gray">In repair</span></td></tr>
+<tr><td>D3</td><td>Not heating</td><td><span class="chip dash">Dismissed</span></td></tr></table>
+<p class="small muted mt">Statuses: Open → Confirmed → In repair → Resolved, or Dismissed with a reason from staff.</p></div></div></div></div><aside class="notes"><h3>W10 · Report a problem and My Reports</h3>
+<p><b>Covers:</b> S4</p>
+<h4>Annotations</h4><ol><li><span class="ann">1</span><span>Machine is pre-filled when opened from a machine card; otherwise chosen from a dropdown.</span></li><li><span class="ann">2</span><span>Category is required (single choice).</span></li><li><span class="ann">3</span><span>Optional photo: JPG or PNG up to 5 MB, with preview after upload.</span></li><li><span class="ann">4</span><span>Submit validates, saves the report, flags the machine as Reported and notifies the building's staff.</span></li><li><span class="ann">5</span><span>My Reports lists the student's reports with their current status; clicking a row shows staff notes.</span></li></ol></aside></div>
+<div class="label" id="state1">State: Validation errors</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="">Machine Board</a><a href="w07.html" class="">My Bookings</a><a href="w08.html" class="">Queue</a><a href="w10.html" class="on">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Report a problem</h1></div>
+<div style="display:grid;grid-template-columns:1fr 420px;gap:28px">
+<div class="box pad"><div class="field"><label>Machine </label><div class="inp sel filled">W4 · Washer · Building 812</div></div>
+<div class="field"><label>What's wrong? </label><div class="grid g3" style="gap:4px 12px"><span class="chk radio"><i class=""></i>Does not start</span><span class="chk radio"><i class=""></i>Leaking</span><span class="chk radio"><i class=""></i>Not draining</span><span class="chk radio"><i class=""></i>Not heating</span><span class="chk radio"><i class=""></i>Door stuck</span><span class="chk radio"><i class=""></i>Other</span></div><span class="errmsg">Choose a category.</span></div>
+<div class="field"><label>Description</label><div class="inp ta err filled">leaks</div>
+<div class="flex between"><span class="hint"></span><span class="hint">5 / 500</span></div><span class="errmsg">Description must be at least 10 characters.</span></div>
+<div class="field"><label>Photo (optional) </label><div class="fillbox" style="height:90px;display:flex;align-items:center;justify-content:center;color:var(--ink2)">IMG_2231.HEIC · 8.4 MB</div><span class="errmsg">Photo must be JPG or PNG, 5 MB or less.</span></div>
+<div class="flex"><a class="btn pri" href="#state2">Submit report</a><a class="btn ghost" href="w04.html">Cancel</a></div></div>
+<div><h2>My Reports </h2><table class="t"><tr><th>Machine</th><th>Issue</th><th>Status</th></tr>
+
+<tr><td>D2</td><td>Does not start</td><td><span class="chip solid">Resolved</span></td></tr>
+<tr><td>W1</td><td>Door stuck</td><td><span class="chip gray">In repair</span></td></tr>
+<tr><td>D3</td><td>Not heating</td><td><span class="chip dash">Dismissed</span></td></tr></table>
+<p class="small muted mt">Statuses: Open → Confirmed → In repair → Resolved, or Dismissed with a reason from staff.</p></div></div></div></div><aside class="notes"><h3>Validation errors</h3><p>Missing category, too-short description and an oversized/wrong-type photo, each with its own message.</p></aside></div>
+<div class="label" id="state2">State: Report submitted</div><div class="row"><div class="frame short"><div class="hdr">
+<a class="logo" href="w04.html"><i></i>WashQ</a>
+<nav class="nav"><a href="w04.html" class="">Machine Board</a><a href="w07.html" class="">My Bookings</a><a href="w08.html" class="">Queue</a><a href="w10.html" class="on">Report a Problem</a><a href="w13.html" class="">History</a></nav>
+<div class="tools"><a href="w12.html" class="small link">Settings</a><a class="bell" href="#" title="Notifications">&#9993;<b>2</b></a>
+<a class="avatar" href="w01.html"><i></i>Faisal A. &#9662;</a></div></div><div class="page"><div class="page-h"><h1>Report a problem</h1></div><div class="banner"><span class="ico">&#10003;</span>Report submitted. W4 is now marked as reported so others won't book it.</div>
+<div style="display:grid;grid-template-columns:1fr 420px;gap:28px">
+<div class="box pad"><div class="field"><label>Machine </label><div class="inp sel filled">W4 · Washer · Building 812</div></div>
+<div class="field"><label>What's wrong? </label><div class="grid g3" style="gap:4px 12px"><span class="chk radio"><i class=""></i>Does not start</span><span class="chk radio"><i class=""></i>Leaking</span><span class="chk radio"><i class="on"></i>Not draining</span><span class="chk radio"><i class=""></i>Not heating</span><span class="chk radio"><i class=""></i>Door stuck</span><span class="chk radio"><i class=""></i>Other</span></div></div>
+<div class="field"><label>Description</label><div class="inp ta">Describe what happened (10–500 characters)</div>
+<div class="flex between"><span class="hint">Be specific: error code, noises, water level</span><span class="hint">0 / 500</span></div></div>
+<div class="field"><label>Photo (optional) </label><div class="fillbox" style="height:90px;display:flex;align-items:center;justify-content:center;color:var(--ink2)">Drag a photo here or click to upload · JPG or PNG, max 5 MB</div></div>
+<div class="flex"><a class="btn pri" href="#state2">Submit report</a><a class="btn ghost" href="w04.html">Cancel</a></div></div>
+<div><h2>My Reports </h2><table class="t"><tr><th>Machine</th><th>Issue</th><th>Status</th></tr>
+<tr><td>W4</td><td>Not draining</td><td><span class="chip">Open</span></td></tr>
+<tr><td>D2</td><td>Does not start</td><td><span class="chip solid">Resolved</span></td></tr>
+<tr><td>W1</td><td>Door stuck</td><td><span class="chip gray">In repair</span></td></tr>
+<tr><td>D3</td><td>Not heating</td><td><span class="chip dash">Dismissed</span></td></tr></table>
+<p class="small muted mt">Statuses: Open → Confirmed → In repair → Resolved, or Dismissed with a reason from staff.</p></div></div></div></div><aside class="notes"><h3>Report submitted</h3><p>Confirmation banner; the new report appears at the top of My Reports as Open.</p></aside></div>
+</body></html>
